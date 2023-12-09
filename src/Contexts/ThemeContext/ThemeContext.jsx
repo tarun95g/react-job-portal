@@ -3,6 +3,7 @@ import React, { useState, useContext, createContext } from "react";
 import classNames from 'classnames';
 import styles from './styles.module.scss';
 import useLocalStorage from "../../Hooks/useLocalStorage";
+import usePrefersColorScheme from "../../Hooks/usePreferColorScheme";
 
 export const THEME = {
     LIGHT: 'light',
@@ -15,7 +16,10 @@ const ThemeValueContext = createContext({
 });
 
 const ThemeContext = (props) => {
-    const [themValue, setTheme] = useLocalStorage('theme', THEME.LIGHT);
+    const preferredColorSchema = usePrefersColorScheme();
+    const isDarkMode = preferredColorSchema === 'dark';
+
+    const [themValue, setTheme] = useLocalStorage('theme',isDarkMode ?  THEME.DARK: THEME.LIGHT);
     const [theme, updateTheme] = useState(themValue);
 
     const updateThemeValue = (value) => {

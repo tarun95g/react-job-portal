@@ -4,7 +4,7 @@
 .footer {
   height: getSpacingValue(50);
   width: 100%;
-  background-color: getColors(background);
+  background-color: getColors(white);
   color: getColors(primaryText);
   @include padding(2);
   box-sizing: border-box;
@@ -19,5 +19,10 @@
     color: getColors(primaryText);
     width: 80%;
     text-align: center;
+  }
+
+  .footerLogo{
+    height: 80px;
+    width: 80px;
   }
 }

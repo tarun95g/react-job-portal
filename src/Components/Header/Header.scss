@@ -2,7 +2,7 @@
        
 .header {
     box-sizing: border-box;
-    background-color: getColors(background);
+    background-color: getColors(white);
     width: 100%;
     height: getSpacingValue(25);
     @include padding(2);
@@ -24,6 +24,8 @@
         z-index: 100;
 
         &__logo {
+            height: 80px;
+            width: 80px;
             font-size: 2rem;
             font-weight: bold;
             text-decoration: none;
