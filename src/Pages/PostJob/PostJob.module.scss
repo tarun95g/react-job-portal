@@ -1,0 +1,28 @@
+@import "../../styles/_shared.scss";
+
+.container {
+  @include flex();
+  @include padding(10);
+  background-color: getColors(darkBackground);
+  color: getColors(primaryText);
+  box-shadow: getShadow(borderShadow);
+  min-height: getSpacingValue(175);
+
+  .formWrapper {
+    width: getSpacingValue(150);
+    @include flex(column);
+
+    .heading {
+      @include margin(10);
+    }
+
+    form {
+      width: 100%;
+      color: getColors(primaryText);
+
+      label {
+        color: getColors(primaryText);
+      }
+    }
+  }
+}

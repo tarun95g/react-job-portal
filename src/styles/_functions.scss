@@ -1,0 +1,39 @@
+@function getColors($key) {
+  @return getValue($colors, $key);
+}
+
+@function getShadow($key) {
+  @return getValue($shadow, $key);
+}
+
+@function getFontSizes($key) {
+  @return getValue($fontSizes, $key);
+}
+
+@function getLineHeight($key) {
+  @return getValue($lineHeight, $key);
+}
+
+@function getSpacingValue($value) {
+  @if isNumber($value) {
+    @return $minimumUnitValue * $value;
+  } @else if $value == auto {
+    @return $value;
+  }
+
+  @error "`#{$value}` in not Number.";
+  @return null;
+}
+
+@function getValue($atom, $key) {
+  @if map-has-key($atom, $key) {
+    @return map-get($atom, $key);
+  }
+
+  @error "Unknown `#{$key}` in `#{$atom}`.";
+  @return null;
+}
+
+@function isNumber($value) {
+  @return type-of($value) == "number";
+}

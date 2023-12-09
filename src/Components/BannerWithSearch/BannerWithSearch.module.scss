@@ -1,0 +1,25 @@
+@import "../../styles/shared.scss";
+
+.BannerWithSearchWrapper {
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .filterHeading {
+    font-size: 32px;
+    font-weight: 700;
+    color: getColors(primaryText);
+  }
+
+  .center {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

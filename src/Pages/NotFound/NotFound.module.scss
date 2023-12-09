@@ -1,0 +1,7 @@
+@import "../../styles/_shared.scss";
+
+.notFoundContainer {
+  min-height: getSpacingValue(150);
+
+  @include flex();
+}

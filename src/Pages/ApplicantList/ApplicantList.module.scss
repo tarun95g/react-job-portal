@@ -1,0 +1,34 @@
+@import "../../styles/shared.scss";
+
+.container {
+  @include flex(column, nowrap, flex-start);
+  @include padding(10);
+  min-height: getSpacingValue(200);
+  background-color: getColors(darkBackground);
+  color: getColors(primaryText);
+  gap: 16px;
+
+  .ApplicantListWrapper {
+    width: 100%;
+    @include flex(row, nowrap, flex-start);
+    min-height: getSpacingValue(200);
+    background-color: getColors(darkBackground);
+    color: getColors(primaryText);
+    gap: 16px;
+    > div {
+      width: 100%;
+    }
+
+    .jobCard {
+      width: 30%;
+    }
+
+    .applicantCard {
+      width: 70%;
+      table {
+        color: getColors(primaryText);
+        background-color: getColors(background);
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import "../../styles/shared.scss";
+
+.searchWrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.boxWrapper {
+  display: flex;
+  align-items: center;
+  padding: 9px 9px 9px 24px;
+  border: 1.26923px solid #eaf1f5;
+  box-sizing: border-box;
+  box-shadow: getShadow(borderShadow);
+  border-radius: 100px;
+  width: 100%;
+  flex-direction: row;
+  background-color: getColors(background);
+  justify-content: space-around;
+
+  button {
+    border-radius: getSpacingValue(25);
+  }
+
+  @include breakpoint(md) {
+    width: 30%;
+  }
+}
+
+.searchFields {
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+  .pipe {
+    background: #40636754;
+    border-radius: 2.53846px;
+    width: 1px;
+    height: 28px;
+  }
+
+  .inputWrapper {
+    display: flex;
+    width: 50%;
+
+    > div {
+      width: 100%;
+    }
+
+    input {
+      font-weight: 500;
+      color: getColors(primaryText);
+      background-color: transparent;
+      border: none;
+      border-color: transparent;
+
+      &::placeholder {
+        color: getColors(primaryText);
+      }
+
+      &:focus,
+      &:active,
+      &:hover {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    * {
+      color: getColors(primaryText);
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      font-weight: 500;
+    }
+  }
+}

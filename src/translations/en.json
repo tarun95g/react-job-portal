@@ -1,0 +1,27 @@
+{
+    "home_banner": "Find your desired job",
+    "job_banner_title": "Your dream Job, a Click away",
+    "placeholder_search" : "Search by Keyword | Skills", 
+    "button_search_label" : "Search", 
+    "placeholder_location": "Search by Location",
+    "links" : {
+        "jobs": "Jobs", 
+        "login": "Login", 
+        "postJob": "Post Job", 
+        "logout" : "Logout", 
+        "myJob": "My Jobs", 
+        "profile": "Profile"
+    }, 
+    "theme" : {
+        "label" : "Theme",
+        "light" : "Light Theme", 
+        "dark" : "Dark Theme"
+    }, 
+    "language": {
+        "label" : "Language", 
+        "hindi": "हिन्दी"
+    },
+    "footer": {
+        "disclaimer": "© 2023 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect, Mint, Credit Karma, and Mailchimp are registered trademarks of Intuit Inc. Terms and conditions, features, support, pricing, and service options subject to change without notice."
+    }
+}

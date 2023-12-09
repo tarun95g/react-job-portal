@@ -1,0 +1,9 @@
+@import "../../styles/_shared.scss";
+
+.light {
+  @include light-theme();
+}
+
+.dark {
+  @include dark-theme();
+}

@@ -1,0 +1,34 @@
+@import '../../../styles/shared.scss';
+
+.background{
+    background-color: getColors(background);
+    color: getColors(primaryText);
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    color: getColors(primaryText);
+    gap: getSpacingValue(2);
+    background-color: transparent;
+    h2{
+        margin: 0;
+    }
+}
+
+
+.detailsWrapper{
+    @include margin(10, 0);
+    background-color: transparent;
+
+    h2{
+        margin: 0;
+    }
+
+    .description{
+        color: getColors(primaryText);
+        font-weight: 500;
+        background-color: transparent
+    }
+
+}

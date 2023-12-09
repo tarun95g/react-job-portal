@@ -1,0 +1,23 @@
+/* your css code */
+@import "../../styles/_shared.scss";
+
+.footer {
+  height: getSpacingValue(50);
+  width: 100%;
+  background-color: getColors(background);
+  color: getColors(primaryText);
+  @include padding(2);
+  box-sizing: border-box;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  h4 {
+    color: getColors(primaryText);
+    width: 80%;
+    text-align: center;
+  }
+}

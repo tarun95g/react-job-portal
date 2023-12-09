@@ -1,0 +1,29 @@
+$minimumUnitValue: 4px;
+
+$colors: (
+  primaryText: var(--primary),
+  background: var(--background),
+  secondaryText: var(--secondary),
+  darkBackground: var(--darkBackground),
+  backgroundLight: var(--backgroundLight),
+);
+
+$shadow: (
+  borderShadow: var(--borderShadow),
+);
+
+$fontSizes: (
+  title: 24px,
+  subtitle: 20px,
+);
+
+$lineHeight: (
+  title: 32px,
+  subtitle: 24px,
+);
+
+$fontWeights: (
+  bold: 700,
+  bolder: 600,
+  regular: 400,
+);

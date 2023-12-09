@@ -1,0 +1,47 @@
+@import "../../styles/shared.scss";
+
+.container {
+  min-height: getSpacingValue(175);
+  .jobWrapper {
+    min-height: getSpacingValue(50);
+    display: flex;
+    @include padding(4);
+    flex-direction: column;
+    background-color: getColors(darkBackground);
+
+    .heading {
+      color: getColors(primaryText);
+    }
+
+    .jobContainer {
+      display: flex;
+      gap: getSpacingValue(4);
+
+      .jobListWrapper {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .jobList {
+        display: flex;
+        flex-direction: column;
+        gap: getSpacingValue(4);
+        height: 400px;
+        overflow: scroll;
+      }
+    }
+
+    .jobDetail {
+      height: auto;
+      flex: 2;
+    }
+  }
+  .filterWrapper {
+    width: 100%;
+
+    @include breakpoint(md) {
+      height: getSpacingValue(130);
+    }
+  }
+}

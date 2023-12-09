@@ -1,0 +1,85 @@
+@import "../../styles/_shared.scss";
+
+.wrapper {
+  @include flex();
+  background-color: getColors(darkBackground);
+  min-height: getSpacingValue(200);
+  align-items: flex-start;
+
+  .container {
+    @include flex(row, nowrap, flex-start);
+    width: 80%;
+
+    gap: getSpacingValue(4);
+    @include padding(10);
+    box-sizing: border-box;
+    color: getColors(primaryText);
+
+    .leftSection {
+      flex-basis: 30%;
+      @include padding(4);
+      min-height: getSpacingValue(100);
+      background-color: getColors(background);
+      border-radius: getSpacingValue(1);
+
+      .editProfileSection {
+        display: flex;
+        justify-content: space-between;
+        @include padding(4);
+        align-items: center;
+
+        h1 {
+          margin: 0;
+          font-size: 18px;
+        }
+
+        .editProfile {
+          cursor: pointer;
+          color: getColors(primaryText);
+          background-color: getColors(background);
+        }
+      }
+
+      .profileOverview {
+        border-radius: getSpacingValue(1);
+        @include padding(4);
+        @include flex(column);
+        // background-color: getColors(darkBackground);
+      }
+
+      .profileDetails {
+        @include flex(column, nowrap, space-between);
+        gap: 4px;
+        @include padding(4);
+        justify-content: center;
+
+        .username {
+          width: 100%;
+          @include flex();
+          text-transform: capitalize;
+          justify-content: space-between;
+
+          .label {
+            font-weight: bold;
+            svg {
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .rightSection {
+      flex-basis: 70%;
+      border-radius: getSpacingValue(1);
+      @include padding(4);
+      height: auto;
+      min-height: getSpacingValue(100);
+      background-color: getColors(background);
+
+      label {
+        color: getColors(primaryText);
+      }
+    }
+  }
+}

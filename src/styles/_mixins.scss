@@ -1,0 +1,83 @@
+@mixin fontSize($fontSize) {
+  font-size: getFontSizes($fontSize);
+  line-height: getLineHeight($fontSize);
+}
+
+@mixin padding($value1: null, $value2: null, $value3: null, $value4: null) {
+  @if $value1 and $value2 and $value3 and $value4 {
+    padding: getSpacingValue($value1)
+      getSpacingValue($value2)
+      getSpacingValue($value3)
+      getSpacingValue($value4);
+  } @else if $value1 and $value2 and $value3 {
+    padding: getSpacingValue($value1)
+      getSpacingValue($value2)
+      getSpacingValue($value3);
+  } @else if $value1 and $value2 {
+    padding: getSpacingValue($value1) getSpacingValue($value2);
+  } @else if $value1 {
+    padding: getSpacingValue($value1);
+  }
+}
+
+@mixin margin($value1: null, $value2: null, $value3: null, $value4: null) {
+  @if $value1 and $value2 and $value3 and $value4 {
+    margin: getSpacingValue($value1)
+      getSpacingValue($value2)
+      getSpacingValue($value3)
+      getSpacingValue($value4);
+  } @else if $value1 and $value2 and $value3 {
+    margin: getSpacingValue($value1)
+      getSpacingValue($value2)
+      getSpacingValue($value3);
+  } @else if $value1 and $value2 {
+    margin: getSpacingValue($value1) getSpacingValue($value2);
+  } @else if $value1 {
+    margin: getSpacingValue($value1);
+  }
+}
+
+@mixin flex(
+  $flex-direction: row,
+  $flex-wrap: nowrap,
+  $align-item: center,
+  $justify-content: center
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+  align-items: $align-item;
+  justify-content: $justify-content;
+}
+
+@mixin dark-theme {
+  --primary: #ffffff;
+  --background: #12151b;
+  --secondary: #406367;
+  --darkBackground: #000000;
+  --backgroundLight: #000000;
+  --white: #12151b;
+  --borderShadow: 1px 0px 10px 11px rgb(173 185 195 / 12%);
+}
+
+@mixin light-theme {
+  --primary: #002f34;
+  --background: #f8f8f8;
+  --secondary: #406367;
+  --backgroundLight: rgb(68 74 87 / 3%);
+  --darkBackground: rgba(255, 255, 255, 1);
+  --white: rgba(255, 255, 255, 1);
+  --borderShadow: 0 4px 12px rgba(86, 141, 187, 0.12);
+}
+
+@mixin selected {
+  border-color: getColors(primaryText);
+}
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}

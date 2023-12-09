@@ -1,0 +1,23 @@
+@import '../../../styles/shared.scss';
+
+.selected{
+    @include selected()
+}
+
+.background{
+    background-color: getColors(background);
+    color: getColors(primaryText);
+}
+
+.heading{
+    display: flex;
+    color: getColors(primaryText);
+    gap: getSpacingValue(2);
+    background-color: transparent;
+}
+
+.description{
+    background-color: transparent;
+    color: getColors(primaryText);
+    font-weight: 500;
+}

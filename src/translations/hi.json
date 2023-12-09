@@ -1,0 +1,27 @@
+{
+  "home_banner": "अपनी इच्छित नौकरी खोजें",
+  "job_banner_title": "आपका सपना नौकरी, एक क्लिक दूर",
+  "placeholder_search": "कीवर्ड द्वारा खोजें | कौशल",
+  "button_search_label": "ढूँढ",
+  "placeholder_location": "स्थान के आधार पर खोजें",
+  "links": {
+    "jobs": "नौकरियों",
+    "login": "लॉगिन",
+    "postJob": "पोस्ट नौकरी",
+    "logout": "लॉगआउट",
+    "myJob": "मेरी नौकरियां",
+    "profile": "रूपरेखा"
+  },
+  "theme": {
+    "label": "विषय",
+    "light": "लाइट थीम",
+    "dark": "डार्क थीम"
+  },
+  "language": {
+    "label": "भाषा",
+    "hindi": "हिन्दी"
+  },
+  "footer": {
+    "disclaimer": "© 2023 Intuit, Inc. सभी अधिकार सुरक्षित. Intuit, QuickBooks, QB, TurboTax, ProConnect, Mint, Credit Karma, और Mailchimp Intuit Inc. नियम और शर्तों, सुविधाओं, समर्थन, मूल्य निर्धारण और सेवा विकल्प के पंजीकृत ट्रेडमार्क हैं जो बिना किसी सूचना के बदलने के अधीन हैं।"
+  }
+}

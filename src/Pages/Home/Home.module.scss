@@ -1,0 +1,8 @@
+@import '../../styles/shared.scss';
+
+.searchWrapper{
+
+    @include breakpoint(md) {
+        height: getSpacingValue(180);
+    }
+}

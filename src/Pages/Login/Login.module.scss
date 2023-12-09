@@ -1,0 +1,59 @@
+@import "../../styles/_shared.scss";
+
+.mainContentWrapper {
+  display: flex;
+  width: 100%;
+  height: getSpacingValue(200);
+  box-shadow: getShadow(borderShadow);
+
+  .leftSection {
+    @include flex();
+    flex: 1;
+
+    .image {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .rightSection {
+    background-color: getColors(backgroundLight);
+    @include flex();
+    flex: 1;
+
+    .loginWrapper {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      height: 500px;
+      align-items: center;
+      justify-content: center;
+      padding: getSpacingValue(4);
+      box-shadow: getShadow(borderShadow);
+
+      h2 {
+        color: getColors(primaryText);
+      }
+
+      form {
+        margin-top: getSpacingValue(12);
+        color: getColors(primaryText);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        * {
+          color: inherit;
+        }
+
+        input {
+          background-color: getColors(darkBackground);
+        }
+      }
+    }
+  }
+}
