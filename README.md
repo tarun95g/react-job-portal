@@ -1,5 +1,9 @@
 # React Job Portal using Create React App.
 
+
+![Portal](https://github.com/tarun95g/react-job-portal/assets/62605729/da9fc5b8-c043-4ed7-b6b1-55b4aa45312d)
+
+
 ## Requirements
 
 This includes both Candidate portal as well as employer portal. 
