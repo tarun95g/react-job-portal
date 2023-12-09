@@ -1,8 +1,27 @@
-# Getting Started with Create React App
+# React Job Portal using Create React App.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Requirements
 
+This includes both Candidate portal as well as employer portal. 
 
+- Login page for Candidate and Employer
+- Theme support (Dark/Light) using Css variables
+- Scss modules
+- Localisation (Translations en, hi-in)
+
+## Candidate Portal 
+
+- View jobs (Home Page)
+- Apply for jobs
+- View Applied Jobs
+- Profile Section
+
+## Employer Portal 
+
+- View all jobs
+- Post jobs
+- View all applicants for a job
+- Profile Section 
 
 ## Stack
 
